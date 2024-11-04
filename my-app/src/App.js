@@ -1,20 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Home from "./routers/Home";
+import About from "./routers/About";
+import Project from "./routers/Project";
+import Contact from "./routers/Contact";
 
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
 
