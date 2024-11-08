@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" : "header"}>
         <Link to="/">
-            <h1 >Sannijs Bondars</h1>
+            <h1 >Sannijs R. Bondars</h1>
         </Link>
         <ul className={click ? "nav-menu active" :
              "nav-menu"}>
@@ -41,10 +41,10 @@ const Navbar = () => {
         </ul>
         <div className="hamburger" onClick={handleClick}>
             {click ? (
-                <FaTimes size={30} style={{ color:
+                <FaTimes size={40} style={{ color:
                 "#fff" }} />
             ) : (
-              <FaBars size={30} style={{color:"#fff"
+              <FaBars size={40} style={{color:"#fff"
               }} />
             )} 
         </div>

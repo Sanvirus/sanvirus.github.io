@@ -55,7 +55,7 @@ ul{
 }
 
 .btn:hover:after {
-  bottom: 2px;
-  left: 2px;
+  bottom: 1px;
+  left: 1px;
 }
 

@@ -40,7 +40,25 @@
 
 .pro-btns .btn{
     padding: 0.5rem 1rem;
+    background-color: #fff;
 }
+
+.btn:focus {
+    outline: 0;
+  }
+  
+.pro-btns  .btn:after {
+    
+    border: 3px solid #ff0000;
+    bottom: 4px;
+    left: 4px;
+   
+  }
+  
+.pro-btns .btn:hover:after {
+    background-color: rgba(0, 60, 255, 0.589);
+  }
+  
 
 
 @media screen and (max-width: 740px) {

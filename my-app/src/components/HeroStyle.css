@@ -37,7 +37,8 @@
 }
 
  /* Full caureja */
-  /* Full caureja */
+
+
 
 .hero {
     display: flex;
@@ -78,23 +79,24 @@
 
 /* Primary button */
 .hero .content .hero-btn .btn {
-    background-color: #ff6600;
+    background-color: #269443;
+    border: 2px solid #fff;
     color: #fff;
   }
   
 .hero .content .hero-btn .btn:hover {
-    background-color: #ff4500;
+    background-color: #44C325;
   }
   
   /* Secondary button */
   .hero .content .hero-btn .btn-light {
     background-color: transparent;
-    color: #ff6600;
-    border: 2px solid #ff6600;
+    color: #31c057;
+    border: 2px solid #fff;
   }
   
   .hero .content .hero-btn .btn-light:hover {
-    background-color: #ff6600;
+    background-color: #269443;
     color: #fff;
   }
 
@@ -143,8 +145,34 @@
 .hero-btn, .butn{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    }*/
+
     
+
+  /* Full caureja 002
+  skewwing p in Hero */
+
+.hero .content .hero-p {
+  
+    transform: skewX(30deg);
+    transform-origin: top left;
 }
+.hero .content .hero-p {
+    position: relative;
+ 
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
 
-
-*/
+.hero .content .hero-p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #269443;
+  transform: skewX(-17deg); /* Skews background element */
+  z-index: -1; 
+}
