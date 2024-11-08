@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef87e0c6.css",
-    "main.js": "/static/js/main.bc045033.js",
-    "static/media/Frame002.png": "/static/media/Frame002.a592df79c0fdf02540ea.png",
-    "static/media/Frame001.png": "/static/media/Frame001.06345d9a4e091cfb0c0a.png",
-    "static/media/HeroIMG.jpeg": "/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
-    "static/media/project5.png": "/static/media/project5.3a4c50d9b4200a9ba364.png",
-    "static/media/project1.png": "/static/media/project1.4f5b1bb05ea156803d64.png",
-    "static/media/project4.png": "/static/media/project4.6e569ba901420cb2590a.png",
-    "static/media/project6.png": "/static/media/project6.a1785af479eae1fdb176.png",
-    "static/media/project3.png": "/static/media/project3.35748a00972c3d400ee4.png",
-    "static/media/project2.png": "/static/media/project2.c800c93bcbee7cce119b.png",
-    "index.html": "/index.html",
-    "main.ef87e0c6.css.map": "/static/css/main.ef87e0c6.css.map",
-    "main.bc045033.js.map": "/static/js/main.bc045033.js.map"
+    "main.css": "/my-app/static/css/main.ef87e0c6.css",
+    "main.js": "/my-app/static/js/main.e435087d.js",
+    "static/media/Frame002.png": "/my-app/static/media/Frame002.a592df79c0fdf02540ea.png",
+    "static/media/Frame001.png": "/my-app/static/media/Frame001.06345d9a4e091cfb0c0a.png",
+    "static/media/HeroIMG.jpeg": "/my-app/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
+    "static/media/project5.png": "/my-app/static/media/project5.3a4c50d9b4200a9ba364.png",
+    "static/media/project1.png": "/my-app/static/media/project1.4f5b1bb05ea156803d64.png",
+    "static/media/project4.png": "/my-app/static/media/project4.6e569ba901420cb2590a.png",
+    "static/media/project6.png": "/my-app/static/media/project6.a1785af479eae1fdb176.png",
+    "static/media/project3.png": "/my-app/static/media/project3.35748a00972c3d400ee4.png",
+    "static/media/project2.png": "/my-app/static/media/project2.c800c93bcbee7cce119b.png",
+    "index.html": "/my-app/index.html",
+    "main.ef87e0c6.css.map": "/my-app/static/css/main.ef87e0c6.css.map",
+    "main.e435087d.js.map": "/my-app/static/js/main.e435087d.js.map"
   },
   "entrypoints": [
     "static/css/main.ef87e0c6.css",
-    "static/js/main.bc045033.js"
+    "static/js/main.e435087d.js"
   ]
 }
