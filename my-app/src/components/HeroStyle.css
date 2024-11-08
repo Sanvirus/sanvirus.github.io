@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #0000009c;
+    background-color: #000000cb;
     opacity: 0.6;
 }
 
@@ -46,11 +46,12 @@
     text-transform: uppercase;
 }
 
-.content .btn{
-    margin: 10rem;
+.hero-btn a{
+    margin:1vw;
+    
 }
 
-@screen and (max-width:640px){
+@media screen and (max-width:640px){
     .hero .content h1{
         font-size: 2rem;
     }
