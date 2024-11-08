@@ -12,11 +12,14 @@
     text-align: center;
     margin: 10%;
     padding: 1rem;
-    max-width: 350px;
+    max-width: 25%;
+    min-width: 350px;
 }
 
 .about .left p{
     margin: 1.2rem 0;
+    font-size: 150%;
+
 }
 
 .about .right{
