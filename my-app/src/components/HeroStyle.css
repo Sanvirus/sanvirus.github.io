@@ -23,6 +23,7 @@
     opacity: 0.6;
 }
 
+
 .hero {
     height: 100%;
     width: 100%;
@@ -32,27 +33,118 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 40%;
-    max-width: 90%;
+    left: 50%;
 }
 
-.hero .content p{
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #436028;
+ /* Full caureja */
+  /* Full caureja */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .content{
+    max-width: 800px;
+    width: 100%;
 }
 
 .hero .content h1{
-    padding: 1vh 0 100px 0;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 5vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds readability over background */
+    font-size: clamp(2rem, 5vw + 1rem, 4rem);
+}
+.hero .content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.hero .content .hero-btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+/* Primary button */
+.hero .content .hero-btn .btn {
+    background-color: #ff6600;
+    color: #fff;
+  }
+  
+.hero .content .hero-btn .btn:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Secondary button */
+  .hero .content .hero-btn .btn-light {
+    background-color: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+  }
+  
+  .hero .content .hero-btn .btn-light:hover {
+    background-color: #ff6600;
+    color: #fff;
+  }
+
+@media (max-width: 568px) {
+  
+  
+    .hero .content h1 {
+    font-size: 2.5rem; /* Slightly smaller title on smaller screens */
+  }
+  
+  .hero .content .hero-btn {
+    flex-direction: column;
+    padding: 10vw;
+  }
+  
+}
+
+
+
+/*
+
+.hero .content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+.hero .content h1{
+    background-color: red;
     font-size: clamp(2rem, 5vw + 1rem, 6rem); 
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.9;
     width: 100%;
+    color: #fdfdfe;
+    text-shadow: 0px 5px 5px #000;
 }
 
 
 .hero .content a{
-    margin: 2vw;
+    margin: 10%;
+    text-align: center;
+    color: white;
 }
 
+.hero-btn, .butn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+*/

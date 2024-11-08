@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+  
+html {
+  scroll-behavior: smooth;
+  }
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -19,44 +24,8 @@ h1, h4, p, a{
 ul{
   list-style-type: none;
 }
-
-/*padding: 15px 42px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: rgba(14, 190, 52, 0.808);
-  color: #222222;
-  border: 3px solid #fff;
-  
-  border-radius: 10%;
-  font-weight: 600;
-
+ 
 .btn {
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: #74AB45;
-  padding: 2vh 6vw;
-  cursor: pointer;
-}
-
-.btn-light {
-  background: transparent;
-  color: #fff;
-}
-
-.btn:hover {
-  background: rgba(255,255,255, 0.2);
-  color:#fff;
-  transition: 0.3s;
-}
-
-436028 -tumšais
-74AB45 - gaiši
-48A0AA - zila
-
-*/
-
-/* CSS */
-.butn {
   background-color: #74AB45;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
@@ -65,18 +34,17 @@ ul{
   font-weight: 700;
   line-height: 1.75rem;
   padding: .75rem 1.65rem;
-  max-width: 45%;
   text-align: center;
   position: relative;
   cursor: pointer;
   touch-action: manipulation;
 }
 
-.butn:focus {
+.btn:focus {
   outline: 0;
 }
 
-.butn:after {
+.btn:after {
   content: '';
   position: absolute;
   border: 3px solid #fff;
@@ -86,7 +54,7 @@ ul{
   height: calc(100% - 1px);
 }
 
-.butn:hover:after {
+.btn:hover:after {
   bottom: 2px;
   left: 2px;
 }
