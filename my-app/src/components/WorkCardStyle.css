@@ -56,7 +56,8 @@
   }
   
 .pro-btns .btn:hover:after {
-    background-color: rgba(0, 60, 255, 0.589);
+    background-color: rgba(30, 255, 0, 0.493);
+    z-index: -0.5;
   }
   
 
