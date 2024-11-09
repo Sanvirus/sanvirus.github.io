@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.8fdd2ff9.css",
-    "main.js": "/my-app/static/js/main.b2eeebdc.js",
-    "static/media/Frame002.png": "/my-app/static/media/Frame002.a592df79c0fdf02540ea.png",
-    "static/media/Frame001.png": "/my-app/static/media/Frame001.06345d9a4e091cfb0c0a.png",
-    "static/media/blossom.jpeg": "/my-app/static/media/blossom.e87107edb98560c28136.jpeg",
-    "static/media/HeroIMG.jpeg": "/my-app/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
-    "static/media/project5.png": "/my-app/static/media/project5.3a4c50d9b4200a9ba364.png",
-    "static/media/project1.png": "/my-app/static/media/project1.4f5b1bb05ea156803d64.png",
-    "static/media/project4.png": "/my-app/static/media/project4.6e569ba901420cb2590a.png",
-    "static/media/prity-boy.jpeg": "/my-app/static/media/prity-boy.3f9c96975e7d607b71eb.jpeg",
-    "static/media/project6.png": "/my-app/static/media/project6.a1785af479eae1fdb176.png",
-    "static/media/project3.png": "/my-app/static/media/project3.35748a00972c3d400ee4.png",
-    "static/media/project2.png": "/my-app/static/media/project2.c800c93bcbee7cce119b.png",
-    "index.html": "/my-app/index.html",
-    "main.8fdd2ff9.css.map": "/my-app/static/css/main.8fdd2ff9.css.map",
-    "main.b2eeebdc.js.map": "/my-app/static/js/main.b2eeebdc.js.map"
+    "main.css": "/static/css/main.eaabf5c7.css",
+    "main.js": "/static/js/main.9e4eb9cb.js",
+    "static/media/Frame002.png": "/static/media/Frame002.a592df79c0fdf02540ea.png",
+    "static/media/Frame001.png": "/static/media/Frame001.06345d9a4e091cfb0c0a.png",
+    "static/media/blossom.jpeg": "/static/media/blossom.e87107edb98560c28136.jpeg",
+    "static/media/HeroIMG.jpeg": "/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
+    "static/media/project5.png": "/static/media/project5.3a4c50d9b4200a9ba364.png",
+    "static/media/project1.png": "/static/media/project1.4f5b1bb05ea156803d64.png",
+    "static/media/project4.png": "/static/media/project4.6e569ba901420cb2590a.png",
+    "static/media/prity-boy.jpeg": "/static/media/prity-boy.3f9c96975e7d607b71eb.jpeg",
+    "static/media/project6.png": "/static/media/project6.a1785af479eae1fdb176.png",
+    "static/media/project3.png": "/static/media/project3.35748a00972c3d400ee4.png",
+    "static/media/project2.png": "/static/media/project2.c800c93bcbee7cce119b.png",
+    "index.html": "/index.html",
+    "main.eaabf5c7.css.map": "/static/css/main.eaabf5c7.css.map",
+    "main.9e4eb9cb.js.map": "/static/js/main.9e4eb9cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fdd2ff9.css",
-    "static/js/main.b2eeebdc.js"
+    "static/css/main.eaabf5c7.css",
+    "static/js/main.9e4eb9cb.js"
   ]
 }
