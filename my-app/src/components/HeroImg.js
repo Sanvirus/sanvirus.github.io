@@ -11,7 +11,7 @@ const HeroImg = () => {
         </div>
         <div>
             <div className="content">
-                <p><span className="hero-p">Junior Web developer</span> /Junior graphic designer/</p>
+                <p><span className="hero-p">Junior Web developer</span> /Junior graphic designer /</p>
                 <h1> "Ja kods neiet, es ieteikšu restartēt. Ja restartēšana nepalīdz, es ķeršos pie risinājuma!"</h1>
                 <div className="hero-btn">
                     <Link to="/project" className="btn">Projekti</Link>
