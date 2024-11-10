@@ -1,178 +1,70 @@
-.mask{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.into-img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-}
-
-.mask::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #000000cb;
-    opacity: 0.6;
-}
-
-
+/* Ensure hero does not overflow onto the footer */
 .hero {
-    height: 100%;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* Avoids taking up 100vh, which can overlap with the footer */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; /* Ensures no content goes beyond boundaries */
+  padding-bottom: 5rem; /* Optional: Add spacing to ensure space above footer */
 }
 
-.hero .content{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-
- /* Full caureja */
-
-
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-}
-
-.hero .content{
-    max-width: 800px;
-    width: 100%;
-}
-
-.hero .content h1{
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 5vh;
-    color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds readability over background */
-    font-size: clamp(2rem, 5vw + 1rem, 4rem);
-}
-.hero .content p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #f0f0f0;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-}
-
-.hero .content .hero-btn {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-
-/* Primary button */
-.hero .content .hero-btn .btn {
-    background-color: #269443;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  
-.hero .content .hero-btn .btn:hover {
-    background-color: #44C325;
-  }
-  
-  /* Secondary button */
-  .hero .content .hero-btn .btn-light {
-    background-color: transparent;
-    color: #31c057;
-    border: 2px solid #fff;
-  }
-  
-  .hero .content .hero-btn .btn-light:hover {
-    background-color: #269443;
-    color: #fff;
-  }
-
-@media (max-width: 568px) {
-  
-  
-    .hero .content h1 {
-    font-size: 2.5rem; /* Slightly smaller title on smaller screens */
-  }
-  
-  .hero .content .hero-btn {
-    flex-direction: column;
-    padding: 10vw;
-  }
-  
-}
-
-
-
-/*
-
-.hero .content p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #000;
-}
-
-.hero .content h1{
-    background-color: red;
-    font-size: clamp(2rem, 5vw + 1rem, 6rem); 
-    font-weight: bold;
-    line-height: 0.9;
-    width: 100%;
-    color: #fdfdfe;
-    text-shadow: 0px 5px 5px #000;
-}
-
-
-.hero .content a{
-    margin: 10%;
-    text-align: center;
-    color: white;
-}
-
-.hero-btn, .butn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    }*/
-
-    
-
-  /* Full caureja 002
-  skewwing p in Hero */
-
-.hero .content .hero-p {
-  
-    transform: skewX(30deg);
-    transform-origin: top left;
-}
-.hero .content .hero-p {
-    position: relative;
- 
-    color: #fff;
-    text-align: center;
-    overflow: hidden;
-  }
-
-.hero .content .hero-p::before {
-  content: '';
+.mask {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  z-index: -1;
+}
+
+.into-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; /* Add slight transparency for readability */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem; /* Ensure some spacing around the content */
+  text-align: center;
+}
+
+.hero .hero-btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero .btn {
   background-color: #269443;
-  transform: skewX(-17deg); /* Skews background element */
-  z-index: -1; 
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+}
+
+.hero .btn:hover {
+  background-color: #44C325;
+}
+
+.hero .btn-light {
+  background-color: transparent;
+  color: #31c057;
+  border: 2px solid #fff;
+}
+
+.hero .btn-light:hover {
+  background-color: #269443;
+  color: #fff;
 }
