@@ -1,10 +1,14 @@
 import "../styles/HeroStyle.css";
 import React from 'react';
 import { Link } from "react-router-dom";
+import IntroImg from "../assets/Hero3.webp"; // Import the image
 
 const HeroImg = () => {
     return (
-        <div className="hero">
+        <div 
+            className="hero"
+            style={{ backgroundImage: `url(${IntroImg})` }} // Set the background inline
+        >
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <p className="hero-subtitle">
