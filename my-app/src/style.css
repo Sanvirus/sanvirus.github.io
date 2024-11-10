@@ -182,16 +182,7 @@ ul {
 }
 
 /* Hero section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: linear-gradient(to right, #000, #0a0a0a);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-align: center;
-}
+
 
 .hero h1 {
   font-size: 3.5rem;
@@ -199,21 +190,15 @@ ul {
 }
 
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
-  color: #8fc361;
+  font-weight: 700;
 }
 
 .hero .btn-primary {
   margin-top: 1rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .btn {
-    font-size: 1rem;
-  }
-}
+
+
+
