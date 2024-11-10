@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.315d4fc2.css",
-    "main.js": "/static/js/main.3f41a05c.js",
+    "main.css": "/static/css/main.e849a64c.css",
+    "main.js": "/static/js/main.d02e1e14.js",
     "static/media/Hero3.webp": "/static/media/Hero3.ed294c7a232c62a02aa0.webp",
     "static/media/HeroIMG.jpeg": "/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
-    "static/media/project5.png": "/static/media/project5.3a4c50d9b4200a9ba364.png",
     "static/media/project1.png": "/static/media/project1.4f5b1bb05ea156803d64.png",
     "static/media/project4.png": "/static/media/project4.6e569ba901420cb2590a.png",
+    "static/media/project5.png": "/static/media/project5.6e569ba901420cb2590a.png",
     "static/media/prity-boy.jpeg": "/static/media/prity-boy.3f9c96975e7d607b71eb.jpeg",
     "static/media/project6.png": "/static/media/project6.a1785af479eae1fdb176.png",
     "static/media/project3.png": "/static/media/project3.35748a00972c3d400ee4.png",
     "static/media/project2.png": "/static/media/project2.c800c93bcbee7cce119b.png",
     "index.html": "/index.html",
-    "main.315d4fc2.css.map": "/static/css/main.315d4fc2.css.map",
-    "main.3f41a05c.js.map": "/static/js/main.3f41a05c.js.map"
+    "main.e849a64c.css.map": "/static/css/main.e849a64c.css.map",
+    "main.d02e1e14.js.map": "/static/js/main.d02e1e14.js.map"
   },
   "entrypoints": [
-    "static/css/main.315d4fc2.css",
-    "static/js/main.3f41a05c.js"
+    "static/css/main.e849a64c.css",
+    "static/js/main.d02e1e14.js"
   ]
 }
