@@ -1,26 +1,25 @@
-import "./HeroStyle.css";
-import React from 'react'
-import IntroImg from "../assets/HeroIMG.jpeg"
+import "../styles/HeroStyle.css";
+import React from 'react';
 import { Link } from "react-router-dom";
 
 const HeroImg = () => {
-  return (
-    <div className="hero">
-        <div className="mask">
-            <img className="into-img" src={IntroImg} alt="mežā"/>
-        </div>
-        <div>
-            <div className="content">
-                <p><span className="hero-p">Junior Web developer</span> /Junior graphic designer /</p>
-                <h1> "Ja kods neiet, es ieteikšu restartēt. Ja restartēšana nepalīdz, es ķeršos pie risinājuma!"</h1>
-                <div className="hero-btn">
-                    <Link to="/project" className="btn">Projekti</Link>
-                    <Link to="/contact" className="btn btn-light">Kontakti</Link>
+    return (
+        <div className="hero">
+            <div className="hero-overlay"></div>
+            <div className="hero-content">
+                <p className="hero-subtitle">
+                    <span className="highlight">Junior Web Developer</span> / Junior Graphic Designer /
+                </p>
+                <h1 className="hero-title">
+                    "Ja kods neiet, es ieteikšu restartēt. Ja restartēšana nepalīdz, es ķeršos pie risinājuma!"
+                </h1>
+                <div className="hero-buttons">
+                    <Link to="/project" className="btn btn-primary">Projekti</Link>
+                    <Link to="/contact" className="btn btn-primary">Kontakti</Link>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    );
 }
 
-export default HeroImg
+export default HeroImg;

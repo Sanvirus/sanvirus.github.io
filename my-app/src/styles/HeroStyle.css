@@ -1,0 +1,98 @@
+/* Hero section styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  background-image: url("../assets/moss.jpeg"); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay for darkening the background image */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Adjust overlay opacity as desired */
+  z-index: -1;
+}
+
+/* Hero content styling */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Subtitle styling */
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #dcdcdc;
+}
+
+/* Highlighted text in subtitle */
+.highlight {
+  color: #4caf50; /* Accent color */
+  font-weight: bold;
+}
+
+/* Hero title styling */
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+}
+
+/* Button container */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Primary button styling */
+.btn-primary {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #66bb6a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+      font-size: 1rem;
+      padding: 0.6rem 1rem;
+  }
+}
