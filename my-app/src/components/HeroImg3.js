@@ -2,6 +2,9 @@ import "./HeroImg3Style.css";
 import React from 'react';
 import IntroImg from "../assets/Hero3.webp";
 
+import { Link } from 'react-router-dom';
+
+
 const HeroImg3 = () => {
     return (
         <div className="hero" 
@@ -11,7 +14,7 @@ const HeroImg3 = () => {
             <div className="hero-content">
                 <h1>Hi, I'm a Programming Enthusiast</h1>
                 <p>Passionate about hackathons, web development, and creative design projects.</p>
-                <button className="hero-btn" to="/project" >Explore My Work</button>
+                <Link to="/project" className="btn btn-primary">Projekti</Link>
             </div>
         </div>
     );

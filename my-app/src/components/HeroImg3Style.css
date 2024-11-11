@@ -68,11 +68,13 @@
     transition: background-color 0.3s ease;
     border-radius: 5px;
     animation: fadeIn 2s ease-in-out;
-}
-
+  }
+  
 .hero-btn:hover {
     background-color: #44C325;
-}
+  }
+
+
 
 /* Animations */
 @keyframes fadeIn {
