@@ -1,18 +1,20 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import HeroImg from "../components/HeroImg";
-import Skills from "../components/Skills";
-import Footer from "../components/Footer";
-import AboutSec from "../components/AboutSec";
+import React from 'react';
+import Navbar from '../components/Navbar';
+import HeroImg from '../components/HeroImg';
+import Projects from '../components/Projects'; // New component
+import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 const Home = () => {
-    return <div>
-      <Navbar />  
-      <HeroImg />
-      <Skills />
-      <AboutSec />
-      <Footer />
-    </div>;
+    return (
+        <>
+            <Navbar />
+            <HeroImg />
+            <Projects />
+            <Skills />
+            <Footer />
+        </>
+    );
 };
 
 export default Home;
