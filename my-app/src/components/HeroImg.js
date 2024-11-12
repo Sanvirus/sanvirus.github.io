@@ -1,13 +1,13 @@
 import "../styles/HeroStyle.css";
 import React from 'react';
 import { Link } from "react-router-dom";
-import IntroImg from "../assets/Hero3.webp"; // Import the image
+import IntroImg from "../assets/Hero3.webp";
 
 const HeroImg = () => {
     return (
         <div 
             className="hero"
-            style={{ backgroundImage: `url(${IntroImg})` }} // Set the background inline
+            style={{ backgroundImage: `url(${IntroImg})` }}
         >
             <div className="hero-overlay"></div>
             <div className="hero-content">
@@ -18,8 +18,8 @@ const HeroImg = () => {
                     "Ja kods neiet, es ieteikšu restartēt. Ja restartēšana nepalīdz, es ķeršos pie risinājuma!"
                 </h1>
                 <div className="hero-buttons">
-                    <Link to="/project" className="btn btn-primary">Projekti</Link>
-                    <Link to="/contact" className="btn btn-primary">Kontakti</Link>
+                    <Link to="/project" className="btn btn-primary">Project</Link>
+                    <Link to="/contact" className="btn btn-primary">Contact</Link>
                 </div>
             </div>
         </div>

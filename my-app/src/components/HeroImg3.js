@@ -11,7 +11,7 @@ const HeroImg3 = () => {
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <h1>Hi, I'm a Programming Enthusiast</h1>
-                <p>Passionate about hackathons, web development, and creative design projects.</p>
+                <p>Passionate about hackathons, web development, and creative design projects.</p><br />
                 <Link to="/project" className="btn btn-primary">Explore My Work</Link>
             </div>
         </div>

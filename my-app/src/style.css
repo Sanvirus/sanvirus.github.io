@@ -38,7 +38,6 @@ p, a, ul li {
 }
 
 a {
-
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -52,28 +51,24 @@ ul {
   list-style-type: none;
 }
 
-/* Buttons */
+/* Global Button Styling */
 .btn {
   background-color: #74AB45;
   border: 2px solid #74AB45;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.75rem 1.65rem;
   text-align: center;
-  position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
   border-radius: 8px;
+  position: relative;
   overflow: hidden;
   display: inline-block;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
-.btn:focus {
-  outline: none;
-}
-
-/* Button effect */
 .btn:before {
   content: '';
   position: absolute;
@@ -96,41 +91,6 @@ ul {
   color: #74AB45;
   background: transparent;
   border-color: #ffffff;
-}
-
-/* Button with box effect */
-.btn-box {
-  background-color: transparent;
-  color: #74AB45;
-  border: 2px solid #74AB45;
-}
-
-.btn-box:hover {
-  color: #ffffff;
-  background-color: #74AB45;
-}
-
-.btn-box:after {
-  content: '';
-  position: absolute;
-  border: 3px solid #ffffff;
-  bottom: 6px;
-  left: 6px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-  transition: all 0.3s ease;
-}
-
-.btn-box:hover:after {
-  bottom: 3px;
-  left: 3px;
-}
-
-/* Container styling */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
 }
 
 /* Section styling */
@@ -180,25 +140,3 @@ ul {
 .img-overlay:hover img {
   transform: scale(1.1);
 }
-
-/* Hero section */
-
-
-.hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-
-.hero .btn-primary {
-  margin-top: 1rem;
-}
-
-
-
-
