@@ -14,9 +14,7 @@ const HeroImg = () => {
                 <p className="hero-subtitle">
                     <span className="highlight">Junior Web Developer</span> / Junior Graphic Designer /
                 </p>
-                <h1 className="hero-title">
-                    "Ja kods neiet, es ieteikšu restartēt. Ja restartēšana nepalīdz, es ķeršos pie risinājuma!"
-                </h1>
+                <h1 className="hero-title">If Code Breaks, I’ll Debug It. If Design Fails, I’ll Rethink It!</h1>
                 <div className="hero-buttons">
                     <Link to="/project" className="btn btn-primary">Project</Link>
                     <Link to="/contact" className="btn btn-primary">Contact</Link>
