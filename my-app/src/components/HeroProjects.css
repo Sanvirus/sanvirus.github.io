@@ -1,0 +1,93 @@
+/* Main Hero Image styling with background image */
+.hero-img {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff;
+    background-image: url('../assets/hero-projects.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Gradient overlay to enhance text readability */
+.hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(135deg, rgba(51, 0, 0, 0.74), rgba(141, 0, 0, 0.781));
+    z-index: 0;
+    filter: blur(1px); /* Optional blur for added depth */
+}
+
+/* Centered content */
+.heading {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect */
+}
+
+/* Title styling */
+.heading h1 {
+    font-size: clamp(2.5rem, 4vw + 1rem, 4rem); /* Responsive font size */
+    margin: 0;
+    color: #f0f0f0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Strong shadow for visibility */
+    font-weight: bold;
+    animation: zoomIn 1.2s ease-out; /* Zoom-in effect */
+}
+
+/* Subtitle styling */
+.heading p {
+    font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+    color: #d0d0d0;
+    max-width: 80%;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    animation: fadeIn 2s ease-out; /* Fade-in for subtitle */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+}

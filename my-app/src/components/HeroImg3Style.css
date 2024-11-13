@@ -39,20 +39,15 @@
 /* Hero title */
 .hero-content h1 {
     font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
-    line-height: 1.2;
-    margin: 0;
     color: #f0f0f0;
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
     font-weight: bold;
     animation: slideIn 1.5s ease-in-out;
-    margin-bottom: 10%;
 }
 
 /* Hero subtitle */
 .hero-content p {
     font-size: clamp(1rem, 2vw, 1.5rem);
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     color: #cccccc;
     animation: fadeIn 2s ease-in-out;
 }

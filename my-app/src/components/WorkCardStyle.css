@@ -1,12 +1,42 @@
-/* Project Section */
+/* Main Work Section with Parallax Background */
+.work-container {
+    position: relative;
+    padding: 6rem 0;
+    color: #ffffff;
+    overflow: hidden;
+    background-image: url('../assets/work-parallax.webp');
+    background-attachment:fixed; /* Parallax effect */
+    background-size: cover;
+    background-position: center;
+   
+}
+
+/* Dark overlay for improved readability over the parallax background */
+.work-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    padding-top: 10vh;
+}
+
+/* Project Heading with Animation */
 .project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
     font-size: 2rem;
     color: #ffffff;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Project Container */
 .project-container {
     max-width: 1140px;
     margin: auto;
@@ -14,12 +44,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding-bottom: 5rem;
+    position: relative;
+    z-index: 1;
 }
 
+/* Project Card Styling */
 .project-card {
-    background: linear-gradient(135deg, #1c1c1e, #333335); /* Subtle gradient background */
+    background: linear-gradient(135deg, #1c1c1e, #333335);
     padding: 1.5rem 1.2rem;
-    border-radius: 16px; /* Softer rounded corners */
+    border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
@@ -30,18 +63,22 @@
     align-items: center;
     text-align: center;
     height: fit-content;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--card-index)); /* Staggered delay */
 }
 
-/* Card hover effect */
+/* Card Hover Effect */
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Project image with hover effect */
+/* Project Image Hover Effect */
 .project-card img {
     width: 100%;
-    border-radius: 12px; /* Softer image corners */
+    border-radius: 12px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -50,7 +87,7 @@
     transform: scale(1.03);
 }
 
-/* Project title styling */
+/* Project Title Styling */
 .project-title {
     color: #ffffff;
     padding: 1rem 0;
@@ -59,7 +96,7 @@
     letter-spacing: 0.5px;
 }
 
-/* Project details paragraph styling */
+/* Project Details Paragraph Styling */
 .pro-details p {
     padding-bottom: 1rem;
     font-size: 1.1rem;
@@ -67,7 +104,7 @@
     color: #bfbfbf;
 }
 
-/* Button container styling */
+/* Button Styling */
 .pro-btns {
     display: flex;
     justify-content: space-around;
@@ -75,12 +112,12 @@
     padding: 0.5rem 0;
 }
 
-/* Modern glassy button styling */
+/* Modern Glassy Button */
 .pro-btns .btn {
     padding: 0.6rem 1.5rem;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 500;
@@ -91,14 +128,14 @@
     display: inline-block;
 }
 
-/* Button hover effect with gradient overlay */
+/* Button Hover Effect */
 .pro-btns .btn:hover {
-    background: linear-gradient(135deg, rgb(41, 128, 0), #006D79); /* Gradient on hover */
+    background: linear-gradient(135deg, rgb(41, 128, 0), #006D79);
     border-color: transparent;
     color: #000000;
 }
 
-/* Button ripple effect on click */
+/* Button Ripple Effect on Click */
 .pro-btns .btn::after {
     content: "";
     position: absolute;
@@ -118,7 +155,7 @@
     opacity: 0;
 }
 
-/* Card fade-in animation */
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -130,11 +167,18 @@
     }
 }
 
-.project-card {
-    animation: fadeIn 0.5s ease forwards;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media screen and (max-width: 740px) {
     .project-container {
         max-width: 90%;
