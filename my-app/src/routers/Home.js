@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroImg from "../components/HeroImg";
 import Skills from "../components/Skills";
 import AboutSec from "../components/AboutSec";
+import ContactForm from '../components/ContactForm.js';
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <HeroImg />
       <Skills />
       <AboutSec />
+      <ContactForm />
       <Footer />
     </div>;
 };

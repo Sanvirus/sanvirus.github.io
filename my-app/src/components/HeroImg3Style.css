@@ -11,16 +11,17 @@
     justify-content: center;
     color: #ffffff;
     overflow: hidden;
+    padding: 2rem;
 }
 
-/* Dark overlay to enhance text readability */
+/* Gradient overlay to enhance text readability */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); /* Gradient overlay */
     z-index: 1;
 }
 
@@ -28,7 +29,7 @@
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     padding: 2rem;
     color: #e0e0e0;
@@ -37,41 +38,45 @@
 
 /* Hero title */
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin: 0;
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
     line-height: 1.2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    color: #f0f0f0;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
     font-weight: bold;
     animation: slideIn 1.5s ease-in-out;
-    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    margin-bottom: 10%;
 }
 
 /* Hero subtitle */
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     margin-top: 1rem;
     margin-bottom: 2rem;
     color: #cccccc;
-    font-size: clamp(1rem, 2vw, 1.5rem);
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Hero button */
+/* Modern button styling */
 .hero-btn {
-    background-color: #269443;
+    background: linear-gradient(135deg, #359738, #46c94a); /* Gradient for button */
     color: #ffffff;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
     animation: fadeIn 2s ease-in-out;
 }
 
+/* Hover effect for button */
 .hero-btn:hover {
-    background-color: #44C325;
+    background: linear-gradient(135deg, #359738, #46c54a); /* Brightened gradient */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Lift effect */
 }
 
 /* Animations */
@@ -99,6 +104,11 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .hero-content {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -109,5 +119,6 @@
 
     .hero-btn {
         font-size: 1rem;
+        padding: 0.6rem 1.2rem;
     }
 }

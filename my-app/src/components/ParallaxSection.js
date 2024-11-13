@@ -5,8 +5,8 @@ const ParallaxSection = () => {
     return (
         <div className="parallax-section">
             <div className="parallax-overlay">
-                <h2>Who am I?</h2>
-                <p>I'm more than just a good worker or student...</p>
+                <h2>Sannijs Bondars</h2>
+                <p>Hello! I’m a 20-year-old student, exploring this vast world one discovery at a time. </p>
             </div>
         </div>
     );

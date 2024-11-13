@@ -62,20 +62,29 @@
     min-height: 150px;
   }
   
-  .btn-primary {
-    background-color: #4caf50;
-    color: #ffffff;
-    border: none;
-    padding: 0.8rem 1.2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  .btn-form {
+    background-color: #359738bd;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: auto;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.3s ease;
+  z-index: 1;
+  width: 100%;
+  min-width: fit-content;
+  height: 6vh;
   }
   
-  .btn-primary:hover {
-    background-color: #66bb6a;
+  .btn-form:hover {
+    background-color: transparent;
+    color: #fff;
+    border:#359738bd solid 1px;
   }
   
   /* Responsive adjustments */

@@ -1,9 +1,13 @@
-.project-heading{
+/* Project Section */
+.project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
-.project-container{
+.project-container {
     max-width: 1140px;
     margin: auto;
     display: grid;
@@ -12,61 +16,142 @@
     padding-bottom: 5rem;
 }
 
-.project-card{
-    background: #1a1919;
-    padding: 1.2rem 1rem;
+.project-card {
+    background: linear-gradient(135deg, #1c1c1e, #333335); /* Subtle gradient background */
+    padding: 1.5rem 1.2rem;
+    border-radius: 16px; /* Softer rounded corners */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
 }
 
-.project-card img{
+/* Card hover effect */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Project image with hover effect */
+.project-card img {
     width: 100%;
+    border-radius: 12px; /* Softer image corners */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.project-title{
-    color: #fff;
+.project-card:hover img {
+    transform: scale(1.03);
+}
+
+/* Project title styling */
+.project-title {
+    color: #ffffff;
     padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-.pro-details p{
+/* Project details paragraph styling */
+.pro-details p {
     padding-bottom: 1rem;
     font-size: 1.1rem;
-    text-align: justify;
+    line-height: 1.6;
+    color: #bfbfbf;
 }
 
-.pro-btns{
+/* Button container styling */
+.pro-btns {
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
     padding: 0.5rem 0;
 }
 
-.pro-btns .btn{
-    padding: 0.5rem 1rem;
-    background-color: #fff;
+/* Modern glassy button styling */
+.pro-btns .btn {
+    padding: 0.6rem 1.5rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.btn:focus {
-    outline: 0;
-  }
-  
-.pro-btns  .btn:after {
-    
-    border: 3px solid #ff0000;
-    bottom: 4px;
-    left: 4px;
-   
-  }
-  
-.pro-btns .btn:hover:after {
-    background-color: rgba(30, 255, 0, 0.493);
-    z-index: -0.5;
-  }
-  
+/* Button hover effect with gradient overlay */
+.pro-btns .btn:hover {
+    background: linear-gradient(135deg, rgb(41, 128, 0), #006D79); /* Gradient on hover */
+    border-color: transparent;
+    color: #000000;
+}
 
+/* Button ripple effect on click */
+.pro-btns .btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
 
+.pro-btns .btn:active::after {
+    transform: scale(2);
+    opacity: 0;
+}
+
+/* Card fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 740px) {
     .project-container {
         max-width: 90%;
         margin: auto;
-
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card {
+        padding: 1.2rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .pro-btns .btn {
+        padding: 0.5rem 1rem;
     }
 }

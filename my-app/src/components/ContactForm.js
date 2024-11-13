@@ -16,7 +16,7 @@ const ContactForm = () => {
           <input type="email" name="_replyto" placeholder="Your Email" required />
           <input type="text" name="subject" placeholder="Subject" />
           <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn-form">
             Send Message
           </button>
         </form>

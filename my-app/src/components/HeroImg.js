@@ -16,7 +16,7 @@ const HeroImg = () => {
                 </p>
                 <h1 className="hero-title">If Code Breaks, I’ll Debug It. If Design Fails, I’ll Rethink It!</h1>
                 <div className="hero-buttons">
-                    <Link to="/project" className="btn btn-primary">Project</Link>
+                    <Link to="/project" className="btn ">Project</Link>
                     <Link to="/contact" className="btn btn-primary">Contact</Link>
                 </div>
             </div>
