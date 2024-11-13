@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.11d1d6cd.css",
-    "main.js": "/static/js/main.1d7a0864.js",
+    "main.css": "/static/css/main.73e3f950.css",
+    "main.js": "/static/js/main.35d55e36.js",
     "static/media/Hero3.webp": "/static/media/Hero3.ed294c7a232c62a02aa0.webp",
+    "static/media/aboutIMG-forest-abstract.webp": "/static/media/aboutIMG-forest-abstract.c427cd9b019adece85f3.webp",
+    "static/media/aboutIMG.jpeg": "/static/media/aboutIMG.78158480b786b05cc992.jpeg",
     "static/media/HeroIMG.jpeg": "/static/media/HeroIMG.504ceb3703f007413c14.jpeg",
     "static/media/project1.png": "/static/media/project1.4f5b1bb05ea156803d64.png",
     "static/media/project4.png": "/static/media/project4.6e569ba901420cb2590a.png",
     "static/media/project5.png": "/static/media/project5.6e569ba901420cb2590a.png",
-    "static/media/prity-boy.jpeg": "/static/media/prity-boy.3f9c96975e7d607b71eb.jpeg",
     "static/media/project6.png": "/static/media/project6.a1785af479eae1fdb176.png",
     "static/media/project3.png": "/static/media/project3.35748a00972c3d400ee4.png",
     "static/media/project2.png": "/static/media/project2.c800c93bcbee7cce119b.png",
     "index.html": "/index.html",
-    "main.11d1d6cd.css.map": "/static/css/main.11d1d6cd.css.map",
-    "main.1d7a0864.js.map": "/static/js/main.1d7a0864.js.map"
+    "main.73e3f950.css.map": "/static/css/main.73e3f950.css.map",
+    "main.35d55e36.js.map": "/static/js/main.35d55e36.js.map"
   },
   "entrypoints": [
-    "static/css/main.11d1d6cd.css",
-    "static/js/main.1d7a0864.js"
+    "static/css/main.73e3f950.css",
+    "static/js/main.35d55e36.js"
   ]
 }
