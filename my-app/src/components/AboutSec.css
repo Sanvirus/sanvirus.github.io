@@ -182,6 +182,7 @@
     .text-content {
         width: 60vw;
         min-width: 270px;
+        height: fit-content;
         animation: slideIn 2s ease-in-out; /* Ensure animation on smaller screens */
     }
 }
